@@ -1,0 +1,42 @@
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    font-size: 62.5%;
+}
+
+html, body, #root, .container, .column {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    width: 960px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pfp {
+    width:  40rem;
+    height: 40rem;
+}
+
+.bio-container {
+    padding: 0 4rem;
+}
+
+.bio {
+    display: inline-block;
+    font-size: 3rem;
+}

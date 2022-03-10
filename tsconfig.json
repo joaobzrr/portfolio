@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "noImplicitAny": true,
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+        "isolatedModules": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "baseUrl": "./",
+        "paths": {
+            "@root*": ["src/*"],
+            "@assets*": ["src/assets/*"],
+            "@components*": ["src/components/*"]
+        }
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        {{#each htmlWebpackPlugin.files.css}}
+            <link href="{{this}}" rel="stylesheet">
+        {{/each}}
+    </head>
+    <body>
+        <div id="root">
+            <div class="container">
+                <div class="column">
+                    <div class="profile">
+                        <div class="pfp-container">
+                            <img class="pfp" src="{{htmlWebpackPlugin.files.publicPath}}static/images/blank.png">
+                        </div>
+                        <div class="bio-container">
+                            <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula, lacus tempus facilisis sodales, felis metus dictum orci, non iaculis orci velit eget odio. Sed non ex iaculis, varius felis in, lacinia nunc. Ut vel neque sem. Proin non mauris mauris. Nullam a consequat orci, at vestibulum nisi.</p>
+                        </div>
+                    </div>
+                    <div id="work">
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{#each htmlWebpackPlugin.files.js}}
+            <script type="text/javascript" src="{{this}}"></script>
+        {{/each}}
+    </body>
+</html>
